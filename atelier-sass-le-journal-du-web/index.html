@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>scss</title>
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,26 +17,38 @@
 <body>
     <header>
         <hr>
-        <span>le journal du web.com</span>
+        <div class="alignage-journalweb">
+            <div class="journalweb white-text">
+                <div class="text-journal">le journal du web.com</div>
+            </div>
+        </div>
 
         <nav>
             <div class="logo">
                 <img src="./images/logo_journal.png" alt="logo les news journal">
             </div>
             <div class="titles">
-                <h1>Le Journal du <span id="web">Web</span></h1>
-                <h2>LOREM - IPSUM - DOLOR SIT - AMET - CONSECTETUR - ELIT</h2>
-                <h3 id="date_du_jour"></h3>
+                <h1>Le Journal du <span class="white-text" id="web">Web</span></h1>
+                <h2 class="white-text">LOREM - IPSUM - DOLOR SIT - AMET - CONSECTETUR - ELIT</h2>
+                <h3 id="date_du_jour">Le Lundi 12 Mai 2025</h3>
             </div>
         </nav>
     </header>
     <main>
+        <div class="grid">
+            <div class="testgrid-1">test1</div>
+            <div class="testgrid-2">test2</div>
+            <div class="testgrid 3">test</div>
+            <div class="testgrid 4">test</div>
+            <div class="testgrid 5">test</div>
+            <div class="testgrid 6">test</div>
+        </div>
         <hr>
         <section>
             <div class="container">
                 <article class="container__card">
-                    <h3>Monica Bellucci une Pro du JS</h3>
-                    <div class="container__card--cadre">
+                    <h3 class="white-text monica-text">Monica Bellucci une Pro du JS</h3>
+                    <div class="container__card--cadre image-monica">
                         <img src="./images/monica_bellucci.png" alt="Monica Bellucci">
                         <div class="text-cadre">freepng.fr</div>
                     </div>
@@ -51,7 +63,7 @@
                     <button>Lire plus<div class="triangle"></div> </button>
                 </article>
                 <article class="container__card">
-                    <h3>Chris Pratt découvre le HTML</h3>
+                    <h3 class="white-text chris-text">Chris Pratt découvre le HTML</h3>
                     <div class="container__card--cadre">
                         <img src="./images/chris_pratt.png" alt="Chris Patt">
                         <div class="text-cadre">freepng.fr</div>
@@ -67,7 +79,7 @@
                     <button>Lire plus<div class="triangle"></div> </button>
                 </article>
                 <article class="container__card">
-                    <h3>Anne Hathaway experte en PHP</h3>
+                    <h3 class="white-text anne-text">Anne Hathaway experte en PHP</h3>
                     <div class="container__card--cadre">
                         <img src="./images/anne_hathaway.png" alt="Anne Hathaway">
                         <div class="text-cadre">freepng.fr</div>

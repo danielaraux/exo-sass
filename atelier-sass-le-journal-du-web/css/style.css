@@ -1,0 +1,84 @@
+@import url(../font/AlfaSlabOne-Regular.ttf);
+body {
+  background-color: #dcdcdc;
+  font: 100% Arial, sans-serif;
+  color: #333;
+}
+
+.white-text {
+  color: white;
+  background-color: #333;
+}
+
+.alignage-journalweb {
+  display: flex;
+  justify-content: end;
+}
+
+.journalweb {
+  width: 15%;
+  text-align: right;
+}
+
+h1 {
+  color: #50524f;
+}
+
+nav {
+  border: 5px solid red;
+  display: flex;
+}
+
+.logo > img {
+  height: 250px;
+  width: 250px;
+}
+
+.titles {
+  margin: 30px;
+}
+
+.container {
+  border: 5px solid green;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.monica-text {
+  border: 3px solid red;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.chris-text {
+  border: 3px solid green;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.anne-text {
+  border: 3px solid blue;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.image-monica > img {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.testgrid-1 {
+  border: 3px solid green;
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+/*# sourceMappingURL=style.css.map */
