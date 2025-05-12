@@ -1,0 +1,31 @@
+Définition : 
+- Compiler : Traduire, rassembler (langage machine)
+
+SCSS : Ajoute des fonctionnalitées au CSS classique
+SASS : pareil
+
+Différence entre les deux, le SCSS utilise des ; à la fin des lignes et des accolades, pas le SASS.
+Le SCSS est donc plus utilisé pour des soucis de lisibilité/praticité.
+
+
+
+A faire : 
+Lire, la présentation du SASS
+
+Faire le "Atelier SASS"
+
+On a la journée pour le faire.
+
+
+Position absolute > Relative pour mettre du texte par dessus.
+
+
+Plug-In pour compiler (livecompiler) à installer sur VSCode.
+
+
+On va faire du NPM (gestionnaire de paquets), il va falloir installer Node.JS en version LTS
+
+J'ai besoin de la couleur Rose, je vais faire npm install couleur rose par exemple.
+
+
+autre exemple : npm install font... (pour installer une font google par exemple)
