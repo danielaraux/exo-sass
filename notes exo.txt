@@ -1,0 +1,3 @@
+sass atelier-sass-le-journal-du-web/sass/style.scss atelier-sass-le-journal-du-web/css/style.css  --watch
+
+Commande pour compiler les modifs du style.scss sur le style.css
