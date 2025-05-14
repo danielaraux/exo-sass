@@ -1,0 +1,43 @@
+sass atelier-sass-le-journal-du-web/sass/style.scss atelier-sass-le-journal-du-web/css/style.css  --watch
+
+Commande pour compiler les modifs du style.scss sur le style.css
+
+
+image en relative et freepng en absolute
+
+
+
+package.json
+correspond à la configuration du projet
+
+
+
+******************************************************************************************************************************************
+Pour la typography :
+
+Il faut avoir le watch activé sur le dossier scss. (préférer le watch avec l'extension, il faudra configurer le .json)
+Et le fichier .ttf dans un dossier "font".
+
+Pour la typo, sur le _typographie.scss (dans le dossier scss) : 
+@font-face {
+    font-family: "AlfaSlabOne";
+    src: url("/atelier-sass-le-journal-du-web/font/AlfaSlabOne-Regular.ttf");
+}
+
+dans notre fichier.scss : 
+@use 'dossier/typography'
+
+et body {
+font-family: 'AlfaSlabOne';
+
+
+avec le use (et si on en a plusieurs)
+Il faudra écrire @include mixin.triangle
+
+
+@use '/atelier-sass-le-journal-du-web/sass/typo';
+
+
+
+
+

@@ -1,0 +1,6 @@
+@mixin triangle {
+    border: 0.9rem solid transparent;
+    border-top-color: white;
+    border-bottom-width: 0;
+    margin-left: 10px;
+}

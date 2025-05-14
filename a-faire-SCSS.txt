@@ -29,3 +29,33 @@ J'ai besoin de la couleur Rose, je vais faire npm install couleur rose par exemp
 
 
 autre exemple : npm install font... (pour installer une font google par exemple)
+
+
+
+Pour le bouton :
+
+button {
+  font-family: Helvetica, sans-serif;
+  border-radius: 4px;
+  background-color: #5a1b03;
+  color: rgb(245, 235, 235);
+  font-size: 1em;
+  padding: 5px 5px 0px 10px;
+  cursor: pointer;
+}
+
+
+
+
+Pour le triangle :
+
+button .triangle {
+  display: inline;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 0.9rem solid transparent;
+  border-top-color: rgb(245, 235, 235);
+  border-bottom-width: 0;
+  margin-left: 10px;
+}
