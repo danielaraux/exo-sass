@@ -1,6 +1,0 @@
-@mixin triangle($direction, $color) {
-    @if ($direction =="down") {
-        border-top: color(orange);
-        border-bottom-width: 0;
-    }
-}

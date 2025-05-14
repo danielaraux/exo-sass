@@ -1,4 +1,4 @@
-// On utilise le use pour ajouter notre typographie
+// On utilise le use pour ajouter notre typographie ou les mixin
 @use "typo";
 @use "mixin";
 
@@ -12,6 +12,7 @@ body {
     background-image: url(../images/fond.webp);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
+    height: 100%;
 }
 
 hr {
@@ -41,8 +42,8 @@ nav {
     display: flex;
 
     .logo>img {
-        height: 20rem;
-        width: 20rem;
+        height: 15rem;
+        width: 15rem;
         margin: 1em;
 
         @media (max-width: $mobile) {
@@ -61,7 +62,8 @@ nav {
         }
 
         & h1,
-        h2 {
+        h2,
+        h3 {
             margin: 0.5em;
         }
     }
@@ -81,22 +83,17 @@ nav {
 h2,
 h3 {
     border-radius: 5px;
-    padding: 0.5rem;
+    padding-top: 0.5rem;
+
 }
-
-
-
-
-
-
-
-
 
 
 section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media (max-width: $mobile) {}
 }
 
 .container {
@@ -104,12 +101,12 @@ section {
     justify-content: center;
     gap: 5em;
     width: 100%;
+    padding-bottom: 2em;
 
     @media (max-width: $mobile) {
-        border: 5px solid green;
+
         display: block;
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
     }
 
     .container__card {
@@ -118,21 +115,25 @@ section {
         margin-top: 2em;
         width: 25%;
         padding: 0.5em;
-        height: 90%;
+        background: linear-gradient(90deg, rgba(229, 219, 218, 1) 0%, rgba(211, 201, 200, 1) 50%, rgba(186, 176, 177, 1) 100%);
+
         // Pour empecher le texte de dépasser de la box
         overflow: auto;
 
         @media (max-width: $mobile) {
-            border: 4px solid red;
-            width: 93%;
+            width: auto;
+            height: auto;
+            margin: 2em 2em 2em 2em;
         }
     }
 
     & h3 {
         font-size: 2em;
+        padding: 1rem;
 
         @media (max-width: $mobile) {
-            font-size: 1em;
+            font-size: 1.5em;
+            text-align: center;
         }
     }
 
@@ -152,24 +153,25 @@ section {
         color: #f8f9f8;
         background-color: #e34f43;
         padding: 0.2em;
-        margin-bottom: 0.5em;
+        margin-bottom: 1em;
     }
 }
 
 .corp {
-    font-size: 1em;
+    font-size: 2em;
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    line-clamp: 9;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 1rem;
 
     @media (max-width: $mobile) {
-        text-align: center;
-
+        text-align: justify;
+        font-size: 2em;
     }
 }
-
-
-
-
-
-
 
 
 .alignement-button {
@@ -183,6 +185,7 @@ section {
         color: #f8f9f8;
         display: flex;
         align-items: center;
+        cursor: pointer;
     }
 
     .triangle {
@@ -190,6 +193,12 @@ section {
         margin-left: 5px;
     }
 }
+
+.triangle {
+    @include mixin.triangle;
+
+}
+
 
 button:hover {
     opacity: 70%;
